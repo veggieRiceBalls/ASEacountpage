@@ -1,0 +1,237 @@
+
+/** Общее оформление листа с курсами **/
+
+.course-template{
+    position:relative;
+    display: inline-flex;
+    border-style: solid;
+    border-color: #8e8e8e;
+    border-width:2.5px;
+
+    width: 600px;
+    height: 160px;
+    margin-left:0;
+    margin-right:20px;
+    padding:0;
+}
+.course-row{
+    display: inline-flex;
+    height: inherit;
+    margin-bottom: 20px;
+    padding:0px;
+
+}
+
+.course-list{
+    display: block;
+    margin-left:20vw;
+    margin-bottom: 15px;
+    position:relative;
+
+}
+
+/**Отдельные детали шаблона курса**/
+
+.course-logo{
+    margin-left:0;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 110px;
+
+}
+.my-page{
+    margin-top: 5vw;
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+}
+.course-right-half{
+    position: absolute;
+    margin-left: 212px;
+
+}
+.course-left-half{
+    position:absolute;
+    margin-top:0;
+    margin-left:0;
+}
+.best-score{
+    margin-left: 10px;
+    margin-bottom: 0;
+
+}
+.course-theme{
+    display: inline-flex;
+}
+.course-description{
+    margin-top:6px;
+}
+span{
+    display: inline-flex;
+}
+.achievement-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/** Прогресс бар **/
+.course-progress-wrapper{
+    height: 15px;
+    width: 250px;
+    position: relative;
+    border-style:solid;
+    border-color: #8e8e8e;
+    border-weight:1px;
+    padding: 0;
+}
+.course-progress{
+    height:inherit;
+    background:#8e8e8e;
+}
+.course-progress-text{
+    position: absolute;
+    margin-left:90px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/** Всплывающее окно "продолжить обучение"**/
+
+
+#on-hover-course {
+    display: none;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(114, 114, 114, .85);
+    z-index:5;
+}
+
+.course-template:hover #on-hover-course {
+    vertical-align: middle;
+    display: block;
+}
+#on-hover-course a{
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: #fbfbfb;
+    margin-top: 64px;
+    margin-left: 140px;
+    position: absolute;
+}
+
+a:link.course-template{
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+/* visited link */
+ #on-hover-course a:visited {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+/* mouse over link */
+#on-hover-course a:hover {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+/* selected link */
+#on-hover-course a:active{
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+/** Кнопки **/
+
+.show-more-gradient {
+    position: absolute;
+    bottom: 0px;
+    width: 1230px;    /**проверить**/
+    height: 80px;
+    padding-top:6vh;
+    text-align: center;
+    background:linear-gradient(to bottom, transparent, #f8f8f8 70%);
+    z-index: 7;
+
+}
+
+.show-more-transparent{
+    width: 1230px;
+    height: 90px;
+    text-align: center;
+    background:transparent
+
+}
+
+button{
+    background-color: #8e8e8e; /* Green */
+    border: none;
+    color: white;
+    width: 300px;
+    height:46px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 8;
+}
+
+/** Шрифты **/
+
+p{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+p.score{
+    font-family: "Arial Black", Gadget, sans-serif;
+    display: inline-flex;
+    margin-right: 1px;
+}
+p.hundred{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #8e8e8e;
+
+}
+h3.course-title{
+    margin-top:8px;
+    margin-bottom: 2px;
+    font-family: Arial, sans-serif;
+
+    font-size:18px;
+
+}
+
+h4.course-type{
+    margin-bottom: 3px;
+    margin-top:0;
+    font-family: Arial, sans-serif;
+
+    font-size:18px;
+}
+h4.course-theme{
+    margin-bottom: 0;
+    margin-top:0;
+    font-family: Arial, sans-serif;
+    font-size:18px;
+}
+
+h1{
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size:40px;
+}
+
+p.course-template{
+    font-family: Arial, sans-serif;
+}

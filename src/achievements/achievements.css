@@ -1,0 +1,76 @@
+.achievements-wrapper{
+    display: flex;
+    position:relative;
+    margin-left: 18vw;
+    margin-bottom: 60px;
+    height: 120px;
+    background-color: #e9e9e9;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.achievement-image{
+    width: 90px;
+    height: 90px;
+    padding-right: 40px;
+    margin-top: 15px;
+}
+.achievement-row{
+    position: absolute;
+}
+
+#on-hover-achievement {
+    display: none;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(114, 114, 114, .85);
+    z-index:5;
+}
+
+.course-template:hover #on-hover-achievement {
+    vertical-align: middle;
+    display: block;
+}
+#on-hover-achievement p{
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: #fbfbfb;
+    margin-top: 64px;
+    margin-left: 140px;
+    position: absolute;
+}
+.on-hover-achievement {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: 160px;
+    background-color: rgba(102, 102, 102, .85);
+    z-index:11;
+    margin-top: -80px;
+    margin-left: 15px;
+}
+
+.achievement-template:hover .on-hover-achievement {
+    display: inline-block;
+}
+.on-hover-achievement p{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fbfbfb;
+    margin-left: 12px;
+    margin-top:1px;
+    margin-bottom: 4px;
+}
+.on-hover-achievement h4{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #fbfbfb;
+    margin-top:6px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}

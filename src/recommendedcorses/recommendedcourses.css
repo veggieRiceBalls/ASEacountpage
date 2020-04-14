@@ -1,0 +1,84 @@
+
+/** Общее оформление листа с рекоммендованными курсами **/
+
+.recommended-list{
+    margin-bottom: 10px;
+    height: inherit;
+    padding:0px;
+    display: block;
+    margin-left:20vw;
+    position:relative;
+}
+
+.recommended-row{
+    display: inline-flex;
+    height: inherit;
+    margin-bottom: 30px;
+}
+.recommended-block{
+    display: block;
+    position:relative;
+    width: 600px;
+    height: 140px;
+    margin-left:0vw;
+    margin-right:20px;
+    border-style: solid;
+    border-color: #8e8e8e;
+    border-width:2.5px;
+    padding:0px;
+}
+
+.recommended-logo{
+    position:absolute;
+    width: 240px;
+    height: 140px;
+    margin-left: 0px;
+    margin-top:0px;
+    margin-botton:0px;
+    padding:0px;
+}
+
+.recommended-right-half{
+    margin-left: 250px;
+    position:absolute;
+    margin-right: 8px;
+}
+
+/* Шрифты */
+
+h3.recommended-title{
+    margin-top:8px;
+    margin-bottom: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size:18px;
+}
+
+h4.recommended-type{
+    margin-bottom: 6px;
+    margin-top: 1px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size:18px;
+}
+p.recommended-description{
+    font-family: Arial, sans-serif;
+}
+
+
+
+.recommended-button-background{
+    text-align: center;
+
+}
+.recommended-button{
+    background-color: #8e8e8e; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}

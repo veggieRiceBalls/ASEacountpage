@@ -1,0 +1,45 @@
+.footer-wrapper{
+    position: relative;
+    width:100%;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top:60px;
+    background-color: #8e8e8e;
+
+}
+ .footer-agreement {
+    font-family: Arial;
+     text-decoration: underline;
+    color: white; /**поправить**/
+}
+.footer-license{
+    font-family: Arial;
+    color: white;
+    margin-top: 15px;
+}
+
+
+
+a:link.footer-agreement{
+    color: #c5c5c5;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited.footer-agreement {
+    color: #c5c5c5;
+    text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover.footer-agreement {
+    color: #c5c5c5;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active.footer-agreement {
+    color: #c5c5c5;
+    text-decoration: underline;
+}
