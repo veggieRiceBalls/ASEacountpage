@@ -1,6 +1,14 @@
 import React from 'react';
 import './SideMenu.css';
-import ASElogo from './ASE_logo.jpg'
+import ASElogo from './ASE_logo.jpg';
+import axios from 'axios';
+import cors
+
+const cors = require('cors');
+const express = require('express');
+let app = express();
+app.use(cors());
+app.options('*', cors());
 
 /** Боковое меню **/
 
@@ -46,12 +54,23 @@ class SideMenuListLine extends React.Component{
 }
 
 class  SideMenu extends React.Component {
+    state = {
+        user_info: []
+    }
+
+    componentDidMount(){
+    axios.get('http://localhost:5000/account/1').then(res => {
+        console.log(res)
+        this.setState({ user_info: res.data})
+    })
+   }
+
     render() {
         return (
             <div className="menu-wrapper">
                 <div  className="side-bar">
                     <SideMenuHeader/>
-                    <SideMenuName name = {"Какая-то Фамилия"} status={"Конспиролог"} extrainfo = {"У вас скоро истечет подписка"} image = "https://i.ibb.co/mzpCG5H/300px.jpg"  />
+                    <SideMenuName name = {this.state.user_info[0]} status={this.state.user_info[1]} extrainfo = {"У вас скоро истечет подписка"} image = "https://i.ibb.co/mzpCG5H/300px.jpg"  />
                     <div className ="side-menu-list">
                         <SideMenuListLine  name={"Мой Road Map"} />
                         <SideMenuListLine  name={"Мои достижения"} />
